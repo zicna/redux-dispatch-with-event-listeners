@@ -39,7 +39,7 @@ having a default argument in our reducer, we can set up our initial state.
 
 ## Rebuild our Dispatch Function and our Reducer
 
-Let's code out this our counter application from scratch.  
+Let's code out our counter application from scratch.  
 
 #### 1. Start by remembering our core fact about how redux works.
 
@@ -63,7 +63,7 @@ function reducer(state, action){
 
 Ok copy this into the `reducer.js` file inside the `js` folder.  Now let's get
 some feedback that we did this correctly by opening up our `index.html` file in
-chrome.  From your terminal type open `index.html`.  Now this index file has a
+Chrome.  From your terminal type `open index.html`. This index file has a
 link to the `reducer.js` file, so your code will be accessible from the console
 - press command+shift+c to open it up.  Now let's test the code by calling the
   `reducer()` function:
@@ -227,7 +227,7 @@ button.addEventListener('click', () => {
 })
 ```
 
-Now every time we click, we dispatch an action of type increase.  Dispatch first
+Now every time we click, we dispatch an action of type `'INCREASE_COUNT'`.  Dispatch first
 calls our reducer, which updates our state.  Then dispatch renders the updated
 view.
 
